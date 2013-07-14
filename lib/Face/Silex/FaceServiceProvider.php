@@ -16,7 +16,7 @@ class FaceServiceProvider implements \Silex\ServiceProviderInterface
     public function register(\Silex\Application $app)
     {
         $app['face.orm'] = $app->share(function ($app) {
-            $pdo=new PDO($app['pdo.dsn'], $app['pdo.username'], $app['pdo.password'], $app['pdo.options']);
+            $pdo=new \PDO($app['pdo.dsn'], $app['pdo.username'], $app['pdo.password'], $app['pdo.options']);
             return new \Face\DiORM($pdo);
         });
     }
