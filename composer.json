@@ -1,0 +1,16 @@
+{
+    "name" : "face/silex",
+    "description" : "Silex service provider for Face ORM",
+    "license" : "BDS-3",
+    "autoload" : {
+        "psr-0" : {
+            "Face" : "lib/"
+        }
+    },
+
+    "require" : {
+        "php"       : ">=5.3.3",
+        "face/face" : "dev-master"
+    }
+
+}
